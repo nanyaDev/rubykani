@@ -5,8 +5,8 @@
         <%= image_tag("wanikani-logo.png") %>
       </div>
       <div class="flex flex-row justify-between items-center gap-8">
-        <a href="#testimonials" class="text-white opacity-75">Success Stories</a>
         <a href="#method" class="text-white opacity-75">Our Method</a>
+        <a href="#testimonials" class="text-white opacity-75">Success Stories</a>
         <a class="text-white opacity-75">Sign In</a>
         <button class="px-4 py-2 text-green-600 rounded-lg bg-white">Join Us</button>
       </div>
@@ -25,50 +25,63 @@
   </div>
 </section>
 
-<section id="testimonials" class="h-screen bg-blue-500 flex flex-col">
-  <div class="flex-1">
-    <h2 class="py-12 text-center text-6xl text-white">From Japanese residents to self learners, our members learn to read Japanese quickly</h2>
-    <p class="text-white">I first studied Japanese in college, and although I was pretty good at grammar, kanji was my weak point. I stayed up all night cramming before the final, and forgot all the kanji again right after I took it. WaniKani teaches kanji with mnemonics to help remember and make sense of them, and reinforces the lessons with periodic reviews to make sure they stick. And knowing kanji helped me to make the jump from reading textbooks to reading native material — the books, video games, and manga I’d always wanted to read.</p>
-  </div>
-  <%= image_tag("testimonials-footer.png") %>
-</section>
-
 <section id="method" class=" h-screen px-24 bg-[url('method-bg.png')]">
   <h2 class="py-12 text-center text-6xl text-gray-500">What makes the WaniKani method effective?</h2>
   <div class="grid grid-cols-3 gap-12">
-    <div class="flex flex-col gap-4 justify-center items-center">
-      <%= image_tag("method-mnemonics.png") %>
-      <h3 class="flex flex-col gap-4 justify-center text-center text-3xl font-semibold">Mnemonics</h3>
-      <p class="text-center">Learn over 2,000 kanji, hand-picked and cleverly ordered, so you can learn the kanji meanings and readings more efficiently. A Japanese schoolchild will spend eight years doing what you can do in a year and a half.</p>
-    </div>
-    <div class="flex flex-col gap-4 justify-center items-center">
+    <div class="flex flex-col gap-4 justify-center items-center relative">
       <%= image_tag("method-radicals.png") %>
       <h3 class="flex flex-col gap-4 justify-center text-center text-3xl font-semibold">Radicals</h3>
-      <p class="text-center">Kanji is great, but it’s not very useful without vocabulary. Learn over 6,000 Japanese words, all carefully validated by a human to be common or useful.</p>
+      <div class="absolute inset-0 flex flex-col justify-center text-transparent hover:text-black hover:backdrop-blur-lg">
+        <p class="text-center">Learn over 2,000 kanji, hand-picked and cleverly ordered, so you can learn the kanji meanings and readings more efficiently. A Japanese schoolchild will spend eight years doing what you can do in a year and a half.</p>
+      </div>
     </div>
-    <div class="flex flex-col gap-4 justify-center items-center">
+    <div class="flex flex-col gap-4 justify-center items-center relative">
       <%= image_tag("method-kanji.png") %>
       <h3 class="flex flex-col gap-4 justify-center text-center text-3xl font-semibold">Kanji</h3>
-      <p class="text-center">Learn over 2,000 kanji, hand-picked and cleverly ordered, so you can learn the kanji meanings and readings more efficiently. A Japanese schoolchild will spend eight years doing what you can do in a year and a half.</p>
+      <div class="absolute inset-0 flex flex-col justify-center text-transparent hover:text-black hover:backdrop-blur-lg">
+        <p class="text-center">Learn over 2,000 kanji, hand-picked and cleverly ordered, so you can learn the kanji meanings and readings more efficiently. A Japanese schoolchild will spend eight years doing what you can do in a year and a half.</p>
+      </div>
     </div>
-    <div class="flex flex-col gap-4 justify-center items-center">
+    <div class="flex flex-col gap-4 justify-center items-center relative">
       <%= image_tag("method-vocabulary.png") %>
       <h3 class="flex flex-col gap-4 justify-center text-center text-3xl font-semibold">Vocabulary</h3>
-      <p class="text-center">Kanji is great, but it’s not very useful without vocabulary. Learn over 6,000 Japanese words, all carefully validated by a human to be common or useful.</p>
+      <div class="absolute inset-0 flex flex-col justify-center text-transparent hover:text-black hover:backdrop-blur-lg">
+        <p class="text-center">Learn over 2,000 kanji, hand-picked and cleverly ordered, so you can learn the kanji meanings and readings more efficiently. A Japanese schoolchild will spend eight years doing what you can do in a year and a half.</p>
+      </div>
     </div>
-    <div class="flex flex-col gap-4 justify-center items-center">
+    <div class="flex flex-col gap-4 justify-center items-center relative">
+      <%= image_tag("method-mnemonics.png") %>
+      <h3 class="flex flex-col gap-4 justify-center text-center text-3xl font-semibold">Mnemonics</h3>
+      <div class="absolute inset-0 flex flex-col justify-center text-transparent hover:text-black hover:backdrop-blur-lg">
+        <p class="text-center">Learn over 2,000 kanji, hand-picked and cleverly ordered, so you can learn the kanji meanings and readings more efficiently. A Japanese schoolchild will spend eight years doing what you can do in a year and a half.</p>
+      </div>
+    </div>
+    <div class="flex flex-col gap-4 justify-center items-center relative">
       <%= image_tag("method-lessons-and-reviews.png") %>
       <h3 class="flex flex-col gap-4 justify-center text-center text-3xl font-semibold">Lessons & Reviews</h3>
-      <p class="text-center">Radicals, kanji, and vocabulary are taught to you through lessons using mnemonics. Practice learned items via reviews until recalling them is second nature.</p>
+      <div class="absolute inset-0 flex flex-col justify-center text-transparent hover:text-black hover:backdrop-blur-lg">
+        <p class="text-center">Learn over 2,000 kanji, hand-picked and cleverly ordered, so you can learn the kanji meanings and readings more efficiently. A Japanese schoolchild will spend eight years doing what you can do in a year and a half.</p>
+      </div>
     </div>
-    <div class="flex flex-col gap-4 justify-center items-center">
+    <div class="flex flex-col gap-4 justify-center items-center relative">
       <%= image_tag("method-srs.png") %>
       <h3 class="flex flex-col gap-4 justify-center text-center text-3xl font-semibold">Spaced Repetition System</h3>
-      <p class="text-center">WaniKani is more than just flashcards. Our SRS algorithm adjusts time between reviews for each individual item, calculated by your last session. You will see a radical, kanji, or vocabulary in your reviews at the optimal time for you, not anybody else.</p>
+      <div class="absolute inset-0 flex flex-col justify-center text-transparent hover:text-black hover:backdrop-blur-lg">
+        <p class="text-center">Learn over 2,000 kanji, hand-picked and cleverly ordered, so you can learn the kanji meanings and readings more efficiently. A Japanese schoolchild will spend eight years doing what you can do in a year and a half.</p>
+      </div>
     </div>
   </div>
 </section>
 
+<section id="testimonials" class="h-screen bg-blue-500 flex flex-col items-center">
+  <div class="flex-1 w-2/3 flex flex-col justify-between items-center">
+    <h2 class="py-12 text-center text-6xl text-white">From Japanese residents to self learners, our members learn to read Japanese quickly</h2>
+    <div class="p-8 rounded-lg bg-blue-600">
+      <p class="text-white">I first studied Japanese in college, and although I was pretty good at grammar, kanji was my weak point. I stayed up all night cramming before the final, and forgot all the kanji again right after I took it. WaniKani teaches kanji with mnemonics to help remember and make sense of them, and reinforces the lessons with periodic reviews to make sure they stick. And knowing kanji helped me to make the jump from reading textbooks to reading native material — the books, video games, and manga I’d always wanted to read.</p>
+    </div>
+    <%= image_tag("testimonials-footer.png") %>
+  </div>
+</section>
 
 <section id="join" class="h-screen bg-green-700 flex flex-col">
   <div class="flex-1 flex flex-col justify-center items-center gap-8">
